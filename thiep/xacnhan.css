@@ -590,6 +590,8 @@ hr{
 }
 
 .forrm{
+  display: flex;
+  flex-direction: column;
   background-image: url('./anh/pic-form1-02.png');
   background-size: contain;
   background-repeat: no-repeat;
@@ -613,7 +615,7 @@ hr{
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 140px 0 20px 0;
+  margin: 80px 0 20px 0;
   line-height: 20px;
 }
 
@@ -1152,7 +1154,7 @@ textarea{
     width: 50px;
   }
   .feed-info{
-    margin: 120px 0 20px 0;
+    margin: 90px 0 20px 0;
     line-height: 15px;
   }
   .in-fe{
