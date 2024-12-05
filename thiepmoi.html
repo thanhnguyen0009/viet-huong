@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Thông tin Open Graph cho ảnh đại diện -->
-  <meta property="og:image" content="https://yenstudio.com.vn/viet-huong.jpg" />
-  <meta property="og:image:width" content="600" /> <!-- Chiều rộng ảnh đại diện -->
-  <meta property="og:image:height" content="300" /> <!-- Chiều cao ảnh đại diện -->
+    <meta property="og:image" content="https://yenstudio.com.vn/viet-huong.jpg" />
+    <meta property="og:image:width" content="600" /> <!-- Chiều rộng ảnh đại diện -->
+    <meta property="og:image:height" content="300" /> <!-- Chiều cao ảnh đại diện -->
 
-  <!-- Các thông tin khác cho Open Graph -->
-  <meta property="og:title" content="VIỆT - HƯƠNG" />
-  <meta property="og:description" content="ĐỨC VIỆT - THANH HƯƠNG" />
-  <!-- <meta property="og:url" content="https://yenstudio.com.vn/loc-huong/thiepmoi.html" /> -->
-  <meta property="og:type" content="website" />
+    <!-- Các thông tin khác cho Open Graph -->
+    <meta property="og:title" content="VIỆT - HƯƠNG" />
+    <meta property="og:description" content="ĐỨC VIỆT - THANH HƯƠNG" />
+    <!-- <meta property="og:url" content="https://yenstudio.com.vn/loc-huong/thiepmoi.html" /> -->
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="./thiep/xacnhan.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"
+        type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link href="./thiep/jquery.fancybox.min.css" rel="stylesheet" />
     <script src="./thiep/jquery.fancybox.min.js"></script>
     <title>VIỆT - HƯƠNG</title>
 </head>
+
 <body>
     <div class="container">
         <div class="container-wrapper">
-            <!-- <div class="circle" id="musicCircle">
+            <div class="circle" id="musicCircle">
                 <img src="./thiep/anh/cd.png" alt="Music Icon" class="circle-image">
-                <audio id="audio" src="./thiep/anh/Matthew Ifield  I Think They Call This Love Cover.mp3"></audio>
-            </div> -->
-           <div class="box-save">
-            <img src="./thiep/anh/pic1-02.png" alt="" class="img-box1">
-           </div>
-           <div class="box-content">
-                <label for="" class="lb2">TRÂN TRỌNG KÍNH MỜI </label>
+                <audio id="audio" src="./thiep/audio/I_Think_They_Call_This_Love.mp3"></audio>
+            </div>
+            <div class="box-save">
+                <img src="./thiep/anh/pic1-02.png" alt="" class="img-box1">
+            </div>
+            <div class="box-content">
+                <label for="" class="lb2">THÂN MỜI</label>
                 <hr>
-                <label for="" class="lb3">ANH/CHỊ/BẠN VÀ GIA ĐÌNH</label>
-                <label for="" class="lb4"><i>ĐẾN THAM DỰ <strong>LỄ THÀNH HÔN, LỄ VU QUY</strong> CỦA <br> <strong>ĐỨC VIỆT VÀ THANH HƯƠNG</strong></i></label>
-                <hr>
+                <label for="" class="lb3">ANH/CHỊ/BẠN và GIA ĐÌNH</label>
+                <!-- <label for="" class="lb3">ANH/CHỊ/BẠN cùng người thương</label> -->
+                <label for="" class="lb4"><i>ĐẾN THAM DỰ <strong>LỄ THÀNH HÔN</strong> CỦA 
+                    <br> 
+                    <strong>ĐỨC VIỆT & THANH HƯƠNG</strong>
+                    <br> tại </i></label>
+                <!-- <hr> -->
                 <div class="box-nhatrai">
-                    <label for="" class="nhatrai">NHÀ TRAI: </label>
+                    <label for="" class="nhatrai">NHÀ TRAI </label>
                     <label for="" class="time-date">13:30 | 29.12.2024</label>
-                    <label for="" class="amlich"><i>( Nhằm ngày 29/11/2024 Âm lịch )</i></label>
-                    <label for="" class="diadiem">Tại: thôn Nghĩa Phong, xã Thuần Thành, huyện Thái Thụy, Thái Bình</label>
+                    <label for="" class="amlich"><i>Ngày 29/11/2024 (Âm lịch)</i></label>
+                    <label for="" class="diadiem">Tại: thôn Nghĩa Phong, xã Thuần Thành, huyện Thái Thụy, Thái
+                        Bình</label>
                 </div>
-                <hr>
-                <div class="box-nhatrai">
+                <!-- <hr> -->
+                <!-- <div class="box-nhatrai">
                     <label for="" class="nhatrai">NHÀ GÁI: </label>
                     <label for="" class="time-date">13:30 | 29.12.2024</label>
-                    <label for="" class="amlich"><i>( Nhằm ngày 29/11/2024 Âm lịch )</i></label>
+                    <label for="" class="amlich"><i>Ngày 29/11/2024 (Âm lịch)</i></label>
                     <label for="" class="diadiem">Tại tư gia nhà trai</label>
-                </div>
+                </div> -->
             </div>
             <div class="box-center">
                 <img src="./thiep/anh/name-02.png" alt="" class="name">
                 <img src="./thiep/anh/pic3-02.png" alt="" class="img-center">
-                <label for="" class="lb5">THỜI GIAN VÀ ĐỊA ĐIỂM TIỆC THÂN MẬT</label>
+                <label for="" class="lb5">BỮA TIỆC THÂN MẬT ĐƯỢC TỔ CHỨC</label>
                 <label for="" class="label-name">NHÀ TRAI</label>
                 <label for="" class="time-center">16:00 | 28.12.2024</label>
-                <label for="" class="date">Ngày 28 tháng 12 năm 2024 Âm lịch</label>
+                <label for="" class="date">Ngày 28 tháng 12 năm 2024 (Âm lịch)</label>
                 <!-- <label for="" class="label-add">TẠI NHÀ HÀNG</label> -->
                 <!-- <label for="" class="add">MELISA CENTER</label> -->
                 <!-- <label for="" class="label-add">Sảnh Lotus - Tulip</label> -->
                 <label for="" class="label-add">Thôn Nghĩa Phong, xã Thuần Thành, huyện Thái Thụy, Thái Bình</label>
+                <div class="map">
+                    <a href="https://maps.app.goo.gl/bLRxDALUuYNs86Ao8" class="link-map" target="_blank">XEM BẢN ĐỒ</a>
+                </div>
+
                 <hr class="hr2">
                 <label for="" class="label-name">NHÀ GÁI</label>
                 <label for="" class="time-center">16:00 | 28.12.2024</label>
-                <label for="" class="date">Ngày 28 tháng 12 năm 2024 Âm lịch</label>
+                <label for="" class="date">Ngày 28 tháng 11 năm 2024 (Âm lịch)</label>
                 <!-- <label for="" class="label-add">TẠI NHÀ HÀNG</label> -->
                 <!-- <label for="" class="add">MELISA CENTER</label> -->
                 <!-- <label for="" class="label-add">Sảnh Lotus - Tulip</label> -->
                 <label for="" class="label-add">Cụm Gò Mè, thôn 7, xã Tiến Xuân, huyện Thạch Thất, TP Hà Nội</label>
-                <!-- <div class="map">
-                <a href="https://maps.app.goo.gl/5MrP7doANQ1GoWLs6" class="link-map">XEM BẢN ĐỒ</a>
-                </div> -->
+                <div class="map">
+                <a href="https://maps.app.goo.gl/PtQ1otbojba9ZdUH6" class="link-map" target="_blank">XEM BẢN ĐỒ</a>
+                </div>
             </div>
             <div class="box-timeline">
                 <!-- <lb class="lb-timeline">TIMELINE</lb>
@@ -85,90 +98,82 @@
                 <div class="box-grid">
                     <div class="item">ĐỨC VIỆT <br>
                         THANH HƯƠNG</div>
-                        <div class="item">SAVE THE DATE</div>
-                        <div class="item">28.12.2024</div>
+                    <div class="item">SAVE THE DATE</div>
+                    <div class="item">29.12.2024</div>
                 </div>
                 <label for="" class="lb-dress">ALBUM PHOTO</label>
                 <label for="" class="cnt-album">CÙNG XEM BST ẢNH CƯỚI CỦA CHÚNG MÌNH NHÉ!</label>
-            
-              <!-- Slider container -->
-              <div class="slider">
-                <div class="slide">
-                <img src="./thiep/anh/1_2_11zon.webp" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./thiep/anh/95H05304_1_11zon.webp" alt="" />
-                </div>
-                
-                <div class="slide">
-                    <img src="./thiep/anh/7_6_11zon.webp" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./thiep/anh/9_7_11zon.webp" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./thiep/anh/15_9_11zon.webp" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./thiep/anh/95H04647_10_11zon.webp" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./thiep/anh/95H04989_12_11zon.webp" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./thiep/anh/95H05108_13_11zon.webp" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./thiep/anh/95H05176_14_11zon.webp" alt="" />
-                </div>
-                <div class="slide">
-                    <img src="./thiep/anh/95H05201_15_11zon.webp" alt="" />
-                </div>
-               
-                <button class="btn btn-next"><i class="fa-solid fa-caret-right"></i></button>
-                <button class="btn btn-prev"><i class="fa-solid fa-caret-left"></i></button>
+
+                <!-- Slider container -->
+                <div class="slider">
+                    <div class="slide">
+                        <img src="./thiep/anh/1_2_11zon.webp" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./thiep/anh/95H05304_1_11zon.webp" alt="" />
+                    </div>
+
+                    <div class="slide">
+                        <img src="./thiep/anh/7_6_11zon.webp" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./thiep/anh/9_7_11zon.webp" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./thiep/anh/15_9_11zon.webp" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./thiep/anh/95H04647_10_11zon.webp" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./thiep/anh/95H04989_12_11zon.webp" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./thiep/anh/95H05108_13_11zon.webp" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./thiep/anh/95H05176_14_11zon.webp" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="./thiep/anh/95H05201_15_11zon.webp" alt="" />
+                    </div>
+
+                    <button class="btn btn-next"><i class="fa-solid fa-caret-right"></i></button>
+                    <button class="btn btn-prev"><i class="fa-solid fa-caret-left"></i></button>
                 </div>
             </div>
             <!-- <div class="box-qr">
                 <button data-modal-target="modal2" class="btn-modal">MỪNG CƯỚI</button>
                 </div> -->
-                <div class="modal" id="modal2">
-                    <div class="modal-content">
-                      <span class="modal-close">&times;</span>
-                      <h1>QR MỪNG CƯỚI</h1>
-                     <img src="./thiep/anh/qr.png" alt="" class="img-modal">
-                    </div>
-                  </div>
-            <p class="content">How long will I love you? <br>
-                As long as stars are above you</p>
+            <div class="modal" id="modal2">
+                <div class="modal-content">
+                    <span class="modal-close">&times;</span>
+                    <h1>QR MỪNG CƯỚI</h1>
+                    <img src="./thiep/anh/qr.png" alt="" class="img-modal">
+                </div>
+            </div>
+            <!-- <p class="content">How long will I love you? <br>
+                As long as the sun rises and sets, and beyond the horizon</p> -->
+
+            <p class="content">
+                <b style="color: rgb(121, 45, 38);">Love</b> is <b>our magic</b> and <b>the greatest adventure</b>
+            </p>
         </div>
-        <div class="box-form" >
+        <div class="box-form">
             <div class="box-grid2">
                 <div class="item">ĐỨC VIỆT <br>
                     THANH HƯƠNG</div>
-                    <div class="item">SAVE THE DATE</div>
-                    <div class="item">28.12.2024</div>
-                </div>
+                <div class="item">SAVE THE DATE</div>
+                <div class="item">29.12.2024</div>
+            </div>
             <!-- <img src="./thiep/anh/pic11-12.webp" alt="" class="img-form"> -->
-             <div class="forrm">
+            <div class="forrm">
                 <form action="" name="viet-huong">
-                    <div class="feed-info">
-                        <label for="" class="in-fe">HÃY GIÀNH CHÚT THỜI GIAN XÁC NHẬN THAM DỰ GIÚP<br>
-                            ĐỨC VIỆT & THANH HƯƠNG NHÉ!</label>
-                    </div>
-                    <hr class="hr1">
-                    
-                    <div class="container-check">
-                        <input class="box-feed" type="radio" value="CÓ" id="yes" name="XÁC NHẬN">
-                        <label class="check-box" for="yes">
-                            <h3 class="til-check">CÓ</h3>
-                        </label>
-                        <input class="box-feed" type="radio" value="KHÔNG" id="no" name="XÁC NHẬN">
-                        <label class="check-box" for="no"> 
-                            <h3 class="til-check">KHÔNG</h3>
-                        </label>
-                    </div>
-                    <div class="til">
+                    <!-- <div class="feed-info">
+                        <label for="" class="in-fe">HÃY GIÀNH CHÚT THỜI GIAN XÁC NHẬN THAM DỰ CÙNG CHÚNG MÌNH NHÉ</label>
+                    </div> -->
+
+                    <div class="til til-custom">
                         <label for="" class="title">BẠN LÀ KHÁCH CỦA CÔ DÂU/CHÚ RỂ ?</label>
                     </div>
                     <div class="container-check">
@@ -177,14 +182,34 @@
                             <h3 class="til-check">CÔ DÂU</h3>
                         </label>
                         <input class="box-feed" type="radio" value="CHÚ RỂ" id="groom" name="BẠN BÈ">
-                        <label class="check-box" for="groom"> 
+                        <label class="check-box" for="groom">
                             <h3 class="til-check">CHÚ RỂ</h3>
                         </label>
                     </div>
+
+                    <hr class="hr1">
+
+                    <div class="feed-info">
+                        <label for="" class="in-fe">HÃY GIÀNH CHÚT THỜI GIAN THAM DỰ CÙNG CHÚNG MÌNH NHÉ</label>
+                    </div>
+
+
+                    <div class="container-check">
+                        <input class="box-feed" type="radio" value="CÓ" id="yes" name="XÁC NHẬN">
+                        <label class="check-box" for="yes">
+                            <h3 class="til-check">CÓ</h3>
+                        </label>
+                        <input class="box-feed" type="radio" value="KHÔNG" id="no" name="XÁC NHẬN">
+                        <label class="check-box" for="no">
+                            <h3 class="til-check">KHÔNG</h3>
+                        </label>
+                    </div>
+
                     <div class="box-ten">
-                        <input required class="inp-ten" type="text"  name="TÊN" placeholder="Tên của bạn">
+                        <input required class="inp-ten" type="text" name="TÊN" placeholder="Bạn tên gì thế?">
                         <!-- <input required class="inp-ten" type="text"  name="SĐT" placeholder="Số điện thoại" maxlength="10" pattern="[0-9]{10}"> -->
-                        <textarea id="message" name="LỜI CHÚC" rows="4" cols="50" placeholder="Gửi lời chúc đến Việt & Hương"></textarea>
+                        <textarea id="message" name="LỜI CHÚC" rows="4" cols="50"
+                            placeholder="Hãy gửi đôi lời iu thương dành cho chúng mình nha ^^"></textarea>
                     </div>
                     <!-- <div class="til">
                         <label for="" class="title">GỬI MỘT VÀI LỜI IU THƯƠNG DÀNH CHO <br> CHÚNG MÌNH NHA ^^</label>
@@ -195,165 +220,170 @@
                     <div class="wrapper">
                         <button class="xacnhan" type="submit">XÁC NHẬN</button>
                     </div>
+
+                    <div class="box-end">
+                        <label for="" class="lb-end1">
+                            Ngày vui sẽ trọn vẹn và ý nghĩa hơn khi có sự hiện diện của bạn.
+                            <br>
+                            Hãy tham dự và chung vui cùng chúng mình nhé! ^^
+                        </label>
+                    </div>
                 </form>
-                <div class="box-end">
-                    <label for="" class="lb-end1">HẸN GẶP LẠI BẠN!</label>
-                    <label for="" class="lb-end2">YÊN STUDIO | YÊN BỀ GIA THẤT</label>
-                </div>
             </div>
         </div>
     </div>
-</div>
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbwA022NUkuubnpXnwct5Sg3q8ApTHDr7TetXMIqAPM4WhC6zzbvaMkMwZ7c8EgTdKGA/exec';
-    const form = document.forms['viet-huong'];
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwA022NUkuubnpXnwct5Sg3q8ApTHDr7TetXMIqAPM4WhC6zzbvaMkMwZ7c8EgTdKGA/exec';
+        const form = document.forms['viet-huong'];
 
-    form.addEventListener('submit', e => {
-    e.preventDefault(); // Ngừng việc gửi form mặc định
+        form.addEventListener('submit', e => {
+            e.preventDefault(); // Ngừng việc gửi form mặc định
 
-    // Hiển thị thông báo cảm ơn ngay khi nhấn gửi
-    alert('CẢM ƠN BẠN ĐÃ PHẢN HỒI! Dữ liệu gửi về sẽ mất khoảng một vài giây, nhấn "OK" và đợi form tự làm mới lại nhé <3');
+            // Hiển thị thông báo cảm ơn ngay khi nhấn gửi
+            alert('CẢM ƠN BẠN ĐÃ PHẢN HỒI! Dữ liệu gửi về sẽ mất khoảng một vài giây, nhấn "OK" và đợi form tự làm mới lại nhé <3');
 
-    // Gửi dữ liệu form đi
-    fetch(scriptURL, { 
-        method: 'POST', 
-        body: new FormData(form)
-    })
-    .then(response => {
-        if (response.ok) {
-            // Nếu dữ liệu gửi thành công, làm mới lại form
-            form.reset(); // Làm mới lại form
-            alert('Thông tin đã được gửi về dâu/rể!!');
-        } else {
-            // Nếu gặp lỗi khi gửi dữ liệu
-            console.error('Error!', response);
-            alert('OPPS! Đã xảy ra lỗi');
+            // Gửi dữ liệu form đi
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Nếu dữ liệu gửi thành công, làm mới lại form
+                        form.reset(); // Làm mới lại form
+                        alert('Thông tin đã được gửi về dâu/rể!!');
+                    } else {
+                        // Nếu gặp lỗi khi gửi dữ liệu
+                        console.error('Error!', response);
+                        alert('OPPS! Đã xảy ra lỗi');
+                    }
+                })
+                .catch(error => {
+                    // Xử lý lỗi nếu có
+                    console.error('Error!', error.message);
+                    alert('OPPS! Đã xảy ra lỗi: ' + error.message);
+                });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // Khởi tạo AOS
+        AOS.init();
+    </script>
+    <script>
+        "use strict";
+        // Select all slides
+        const slides = document.querySelectorAll(".slide");
+
+        // loop through slides and set each slides translateX
+        slides.forEach((slide, indx) => {
+            slide.style.transform = `translateX(${indx * 100}%)`;
+        });
+
+        // select next slide button
+        const nextSlide = document.querySelector(".btn-next");
+
+        // current slide counter
+        let curSlide = 0;
+        // maximum number of slides
+        let maxSlide = slides.length - 1;
+
+        // add event listener and navigation functionality
+        nextSlide.addEventListener("click", function () {
+            // check if current slide is the last and reset current slide
+            if (curSlide === maxSlide) {
+                curSlide = 0;
+            } else {
+                curSlide++;
+            }
+
+            //   move slide by -100%
+            slides.forEach((slide, indx) => {
+                slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+            });
+        });
+
+        // select next slide button
+        const prevSlide = document.querySelector(".btn-prev");
+
+        // add event listener and navigation functionality
+        prevSlide.addEventListener("click", function () {
+            // check if current slide is the first and reset current slide to last
+            if (curSlide === 0) {
+                curSlide = maxSlide;
+            } else {
+                curSlide--;
+            }
+
+            //   move slide by 100%
+            slides.forEach((slide, indx) => {
+                slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
+            });
+        });
+
+    </script>
+    <script>
+
+
+        const modalTriggerButtons = document.querySelectorAll("[data-modal-target]");
+        const modals = document.querySelectorAll(".modal");
+        const modalCloseButtons = document.querySelectorAll(".modal-close");
+
+        modalTriggerButtons.forEach(elem => {
+            elem.addEventListener("click", event => toggleModal(event.currentTarget.getAttribute("data-modal-target")));
+        });
+        modalCloseButtons.forEach(elem => {
+            elem.addEventListener("click", event => toggleModal(event.currentTarget.closest(".modal").id));
+        });
+        modals.forEach(elem => {
+            elem.addEventListener("click", event => {
+                if (event.currentTarget === event.target) toggleModal(event.currentTarget.id);
+            });
+        });
+
+        // Maybe also close with "Esc"...
+        document.addEventListener("keydown", event => {
+            if (event.keyCode === 27 && document.querySelector(".modal.modal-show")) {
+                toggleModal(document.querySelector(".modal.modal-show").id);
+            }
+        });
+
+        function toggleModal(modalId) {
+            const modal = document.getElementById(modalId);
+
+            if (getComputedStyle(modal).display === "flex") { // alternatively: if(modal.classList.contains("modal-show"))
+                modal.classList.add("modal-hide");
+                setTimeout(() => {
+                    document.body.style.overflow = "initial"; // Optional: in order to enable/disable page scrolling while modal is hidden/shown - in this case: "initial" <=> "visible"
+                    modal.classList.remove("modal-show", "modal-hide");
+                    modal.style.display = "none";
+                }, 200);
+            }
+            else {
+                document.body.style.overflow = "hidden"; // Optional: in order to enable/disable page scrolling while modal is hidden/shown
+                modal.style.display = "flex";
+                modal.classList.add("modal-show");
+            }
         }
-    })
-    .catch(error => {
-        // Xử lý lỗi nếu có
-        console.error('Error!', error.message);
-        alert('OPPS! Đã xảy ra lỗi: ' + error.message);
-    });
-});
-</script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    // Khởi tạo AOS
-    AOS.init();
-</script>
-<script>
-    "use strict";
-    // Select all slides
-    const slides = document.querySelectorAll(".slide");
-    
-    // loop through slides and set each slides translateX
-    slides.forEach((slide, indx) => {
-    slide.style.transform = `translateX(${indx * 100}%)`;
-    });
-    
-    // select next slide button
-    const nextSlide = document.querySelector(".btn-next");
-    
-    // current slide counter
-    let curSlide = 0;
-    // maximum number of slides
-    let maxSlide = slides.length - 1;
-    
-    // add event listener and navigation functionality
-    nextSlide.addEventListener("click", function () {
-    // check if current slide is the last and reset current slide
-    if (curSlide === maxSlide) {
-        curSlide = 0;
-    } else {
-        curSlide++;
-    }
-    
-    //   move slide by -100%
-    slides.forEach((slide, indx) => {
-        slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-    });
-    });
-    
-    // select next slide button
-    const prevSlide = document.querySelector(".btn-prev");
-    
-    // add event listener and navigation functionality
-    prevSlide.addEventListener("click", function () {
-    // check if current slide is the first and reset current slide to last
-    if (curSlide === 0) {
-        curSlide = maxSlide;
-    } else {
-        curSlide--;
-    }
-    
-    //   move slide by 100%
-    slides.forEach((slide, indx) => {
-        slide.style.transform = `translateX(${100 * (indx - curSlide)}%)`;
-    });
-    });
+    </script>
+    <script>
+        const musicCircle = document.getElementById("musicCircle");
+        const audio = document.getElementById("audio");
 
- </script>
- <script>
-
-
-    const modalTriggerButtons = document.querySelectorAll("[data-modal-target]");
-    const modals = document.querySelectorAll(".modal");
-    const modalCloseButtons = document.querySelectorAll(".modal-close");
-
-    modalTriggerButtons.forEach(elem => {
-    elem.addEventListener("click", event => toggleModal(event.currentTarget.getAttribute("data-modal-target")));
-    });
-    modalCloseButtons.forEach(elem => {
-    elem.addEventListener("click", event => toggleModal(event.currentTarget.closest(".modal").id));
-    });
-    modals.forEach(elem => {
-    elem.addEventListener("click", event => {
-        if(event.currentTarget === event.target) toggleModal(event.currentTarget.id);
-    });
-    });
-
-    // Maybe also close with "Esc"...
-    document.addEventListener("keydown", event => {
-    if(event.keyCode === 27 && document.querySelector(".modal.modal-show")) {
-        toggleModal(document.querySelector(".modal.modal-show").id);
-    }
-    });
-
-    function toggleModal(modalId) {
-    const modal = document.getElementById(modalId);
-
-    if(getComputedStyle(modal).display==="flex") { // alternatively: if(modal.classList.contains("modal-show"))
-        modal.classList.add("modal-hide");
-        setTimeout(() => {
-        document.body.style.overflow = "initial"; // Optional: in order to enable/disable page scrolling while modal is hidden/shown - in this case: "initial" <=> "visible"
-        modal.classList.remove("modal-show", "modal-hide");
-        modal.style.display = "none";      
-        }, 200);
-    }
-    else {
-        document.body.style.overflow = "hidden"; // Optional: in order to enable/disable page scrolling while modal is hidden/shown
-        modal.style.display = "flex";
-        modal.classList.add("modal-show");
-    }
-    }
-</script>
-<script>
-  const musicCircle = document.getElementById("musicCircle");
-const audio = document.getElementById("audio");
-
-// Thêm sự kiện khi nhấn vào hình tròn
-musicCircle.addEventListener("click", function () {
-// Nếu nhạc đang dừng và hình tròn không xoay
-if (audio.paused) {
-    audio.play(); // Phát nhạc
-    musicCircle.classList.add("spin"); // Bắt đầu xoay liên tục
-} else {
-    audio.pause(); // Dừng nhạc nếu đang phát
-    musicCircle.classList.remove("spin"); // Dừng xoay
-}
-});
-</script>
- <script src="./thiep/thiep.js"></script>
+        // Thêm sự kiện khi nhấn vào hình tròn
+        musicCircle.addEventListener("click", function () {
+            // Nếu nhạc đang dừng và hình tròn không xoay
+            if (audio.paused) {
+                audio.play(); // Phát nhạc
+                musicCircle.classList.add("spin"); // Bắt đầu xoay liên tục
+            } else {
+                audio.pause(); // Dừng nhạc nếu đang phát
+                musicCircle.classList.remove("spin"); // Dừng xoay
+            }
+        });
+    </script>
+    <script src="./thiep/thiep.js"></script>
 </body>
+
 </html>
