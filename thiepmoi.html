@@ -15,23 +15,29 @@
     <!-- <meta property="og:url" content="https://yenstudio.com.vn/loc-huong/thiepmoi.html" /> -->
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="./thiep/xacnhan.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"
-        type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"
-        type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <link href="./thiep/jquery.fancybox.min.css" rel="stylesheet" />
-    <script src="./thiep/jquery.fancybox.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title>VIỆT - HƯƠNG</title>
 </head>
 
 <body>
+    <div id="loading-container" class="loading-container">
+        <div class="spinner"></div>
+    </div>
+
     <div class="container">
         <div class="container-wrapper">
             <div class="circle" id="musicCircle">
                 <img src="./thiep/anh/cd.png" alt="Music Icon" class="circle-image">
-                <audio id="audio" src="./thiep/audio/I_Think_They_Call_This_Love.mp3"></audio>
+                <audio id="audio" src="./thiep/audio/I_Think_They_Call_This_Love.mp3" loop></audio>
             </div>
             <div class="box-save">
                 <img src="./thiep/anh/pic1-02.png" alt="" class="img-box1">
@@ -40,26 +46,16 @@
                 <label for="" class="lb2">THÂN MỜI</label>
                 <hr>
                 <label for="" class="lb3">ANH/CHỊ/BẠN và GIA ĐÌNH</label>
-                <!-- <label for="" class="lb3">ANH/CHỊ/BẠN cùng người thương</label> -->
                 <label for="" class="lb4"><i>ĐẾN THAM DỰ <strong>LỄ THÀNH HÔN</strong> CỦA 
                     <br> 
                     <strong>ĐỨC VIỆT & THANH HƯƠNG</strong>
                     <br> tại </i></label>
-                <!-- <hr> -->
                 <div class="box-nhatrai">
                     <label for="" class="nhatrai">NHÀ TRAI </label>
                     <label for="" class="time-date">13:30 | 29.12.2024</label>
                     <label for="" class="amlich"><i>Ngày 29/11/2024 (Âm lịch)</i></label>
-                    <label for="" class="diadiem">Tại: thôn Nghĩa Phong, xã Thuần Thành, huyện Thái Thụy, Thái
-                        Bình</label>
+                    <label for="" class="diadiem">Tại: thôn Nghĩa Phong, xã Thuần Thành, huyện Thái Thụy, Thái Bình</label>
                 </div>
-                <!-- <hr> -->
-                <!-- <div class="box-nhatrai">
-                    <label for="" class="nhatrai">NHÀ GÁI: </label>
-                    <label for="" class="time-date">13:30 | 29.12.2024</label>
-                    <label for="" class="amlich"><i>Ngày 29/11/2024 (Âm lịch)</i></label>
-                    <label for="" class="diadiem">Tại tư gia nhà trai</label>
-                </div> -->
             </div>
             <div class="box-center">
                 <img src="./thiep/anh/name-02.png" alt="" class="name">
@@ -67,10 +63,7 @@
                 <label for="" class="lb5">BỮA TIỆC THÂN MẬT ĐƯỢC TỔ CHỨC</label>
                 <label for="" class="label-name">NHÀ TRAI</label>
                 <label for="" class="time-center">16:00 | 28.12.2024</label>
-                <label for="" class="date">Ngày 28 tháng 12 năm 2024 (Âm lịch)</label>
-                <!-- <label for="" class="label-add">TẠI NHÀ HÀNG</label> -->
-                <!-- <label for="" class="add">MELISA CENTER</label> -->
-                <!-- <label for="" class="label-add">Sảnh Lotus - Tulip</label> -->
+                <label for="" class="date">Ngày 28 tháng 11 năm 2024 (Âm lịch)</label>
                 <label for="" class="label-add">Thôn Nghĩa Phong, xã Thuần Thành, huyện Thái Thụy, Thái Bình</label>
                 <div class="map">
                     <a href="https://maps.app.goo.gl/bLRxDALUuYNs86Ao8" class="link-map" target="_blank">XEM BẢN ĐỒ</a>
@@ -80,25 +73,23 @@
                 <label for="" class="label-name">NHÀ GÁI</label>
                 <label for="" class="time-center">16:00 | 28.12.2024</label>
                 <label for="" class="date">Ngày 28 tháng 11 năm 2024 (Âm lịch)</label>
-                <!-- <label for="" class="label-add">TẠI NHÀ HÀNG</label> -->
-                <!-- <label for="" class="add">MELISA CENTER</label> -->
-                <!-- <label for="" class="label-add">Sảnh Lotus - Tulip</label> -->
                 <label for="" class="label-add">Cụm Gò Mè, thôn 7, xã Tiến Xuân, huyện Thạch Thất, TP Hà Nội</label>
                 <div class="map">
                 <a href="https://maps.app.goo.gl/PtQ1otbojba9ZdUH6" class="link-map" target="_blank">XEM BẢN ĐỒ</a>
                 </div>
             </div>
             <div class="box-timeline">
-                <!-- <lb class="lb-timeline">TIMELINE</lb>
-                <img src="./thiep/anh/timeline-02.png" alt="" class="img-timeline"> -->
                 <img src="./thiep/anh/pic-timeline-02.png" alt="" class="img-timeline2">
                 <img src="./thiep/anh/cnt-02.png" alt="" class="img-timeline3">
             </div>
             <div class="box-album">
                 <div class="box-grid">
-                    <div class="item">ĐỨC VIỆT <br>
-                        THANH HƯƠNG</div>
                     <div class="item">SAVE THE DATE</div>
+                    <div class="item">
+                        ĐỨC VIỆT
+                        <br>
+                        THANH HƯƠNG
+                    </div>
                     <div class="item">29.12.2024</div>
                 </div>
                 <label for="" class="lb-dress">ALBUM PHOTO</label>
@@ -106,35 +97,82 @@
 
                 <!-- Slider container -->
                 <div class="slider">
-                    <div class="slide">
+                    <div 
+                        class="slide"
+                        data-fancybox="gallery"
+                        data-src="./thiep/anh/1_2_11zon.webp"
+                    >
                         <img src="./thiep/anh/1_2_11zon.webp" alt="" />
                     </div>
-                    <div class="slide">
+                    <div 
+                        class="slide"
+                        data-fancybox="gallery"
+                        data-src="./thiep/anh/95H05304_1_11zon.webp"
+                    >
                         <img src="./thiep/anh/95H05304_1_11zon.webp" alt="" />
                     </div>
 
-                    <div class="slide">
+                    <div 
+                        class="slide"
+                        data-fancybox="gallery"
+                        data-src="./thiep/anh/7_6_11zon.webp"
+                    >
                         <img src="./thiep/anh/7_6_11zon.webp" alt="" />
                     </div>
-                    <div class="slide">
+
+                    <div 
+                        class="slide"
+                        data-fancybox="gallery"
+                        data-src="./thiep/anh/9_7_11zon.webp"
+                    >
                         <img src="./thiep/anh/9_7_11zon.webp" alt="" />
                     </div>
-                    <div class="slide">
+
+                    <div 
+                        class="slide"
+                        data-fancybox="gallery"
+                        data-src="./thiep/anh/15_9_11zon.webp"
+                    >
                         <img src="./thiep/anh/15_9_11zon.webp" alt="" />
                     </div>
-                    <div class="slide">
+
+                    <div 
+                        class="slide"
+                        data-fancybox="gallery"
+                        data-src="./thiep/anh/95H04647_10_11zon.webp"
+                    >
                         <img src="./thiep/anh/95H04647_10_11zon.webp" alt="" />
                     </div>
-                    <div class="slide">
+
+                    <div 
+                        class="slide"
+                        data-fancybox="gallery"
+                        data-src="./thiep/anh/95H04989_12_11zon.webp"
+                    >
                         <img src="./thiep/anh/95H04989_12_11zon.webp" alt="" />
                     </div>
-                    <div class="slide">
+
+                    <div 
+                        class="slide"
+                        data-fancybox="gallery"
+                        data-src="./thiep/anh/95H05108_13_11zon.webp"
+                    >
                         <img src="./thiep/anh/95H05108_13_11zon.webp" alt="" />
                     </div>
-                    <div class="slide">
+
+                    <div 
+                        class="slide"
+                        data-fancybox="gallery"
+                        data-src="./thiep/anh/95H05176_14_11zon.webp"
+                    >
                         <img src="./thiep/anh/95H05176_14_11zon.webp" alt="" />
                     </div>
-                    <div class="slide">
+
+                    <div 
+                        class="slide"
+                        data-fancybox="gallery"
+                        data-src="./thiep/anh/95H05201_15_11zon.webp"
+                    >
                         <img src="./thiep/anh/95H05201_15_11zon.webp" alt="" />
                     </div>
 
@@ -142,18 +180,6 @@
                     <button class="btn btn-prev"><i class="fa-solid fa-caret-left"></i></button>
                 </div>
             </div>
-            <!-- <div class="box-qr">
-                <button data-modal-target="modal2" class="btn-modal">MỪNG CƯỚI</button>
-                </div> -->
-            <div class="modal" id="modal2">
-                <div class="modal-content">
-                    <span class="modal-close">&times;</span>
-                    <h1>QR MỪNG CƯỚI</h1>
-                    <img src="./thiep/anh/qr.png" alt="" class="img-modal">
-                </div>
-            </div>
-            <!-- <p class="content">How long will I love you? <br>
-                As long as the sun rises and sets, and beyond the horizon</p> -->
 
             <p class="content">
                 <b style="color: rgb(121, 45, 38);">Love</b> is <b>our magic</b> and <b>the greatest adventure</b>
@@ -161,18 +187,16 @@
         </div>
         <div class="box-form">
             <div class="box-grid2">
-                <div class="item">ĐỨC VIỆT <br>
-                    THANH HƯƠNG</div>
                 <div class="item">SAVE THE DATE</div>
+                <div class="item">
+                    ĐỨC VIỆT 
+                    <br>
+                    THANH HƯƠNG
+                </div>
                 <div class="item">29.12.2024</div>
             </div>
-            <!-- <img src="./thiep/anh/pic11-12.webp" alt="" class="img-form"> -->
             <div class="forrm">
                 <form action="" name="viet-huong">
-                    <!-- <div class="feed-info">
-                        <label for="" class="in-fe">HÃY GIÀNH CHÚT THỜI GIAN XÁC NHẬN THAM DỰ CÙNG CHÚNG MÌNH NHÉ</label>
-                    </div> -->
-
                     <div class="til til-custom">
                         <label for="" class="title">BẠN LÀ KHÁCH CỦA CÔ DÂU/CHÚ RỂ ?</label>
                     </div>
@@ -207,16 +231,10 @@
 
                     <div class="box-ten">
                         <input required class="inp-ten" type="text" name="TÊN" placeholder="Bạn tên gì thế?">
-                        <!-- <input required class="inp-ten" type="text"  name="SĐT" placeholder="Số điện thoại" maxlength="10" pattern="[0-9]{10}"> -->
                         <textarea id="message" name="LỜI CHÚC" rows="4" cols="50"
                             placeholder="Hãy gửi đôi lời iu thương dành cho chúng mình nha ^^"></textarea>
                     </div>
-                    <!-- <div class="til">
-                        <label for="" class="title">GỬI MỘT VÀI LỜI IU THƯƠNG DÀNH CHO <br> CHÚNG MÌNH NHA ^^</label>
-                    </div>
-                    <div class="box-ten">
-                        <textarea id="message" name="LỜI CHÚC" rows="4" cols="50" placeholder="Gửi lời chúc đến Thành & Thắm"></textarea>
-                    </div> -->
+
                     <div class="wrapper">
                         <button class="xacnhan" type="submit">XÁC NHẬN</button>
                     </div>
@@ -240,8 +258,7 @@
         form.addEventListener('submit', e => {
             e.preventDefault(); // Ngừng việc gửi form mặc định
 
-            // Hiển thị thông báo cảm ơn ngay khi nhấn gửi
-            alert('CẢM ƠN BẠN ĐÃ PHẢN HỒI! Dữ liệu gửi về sẽ mất khoảng một vài giây, nhấn "OK" và đợi form tự làm mới lại nhé <3');
+            document.getElementById('loading-container').style.display = 'flex';
 
             // Gửi dữ liệu form đi
             fetch(scriptURL, {
@@ -252,17 +269,53 @@
                     if (response.ok) {
                         // Nếu dữ liệu gửi thành công, làm mới lại form
                         form.reset(); // Làm mới lại form
-                        alert('Thông tin đã được gửi về dâu/rể!!');
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                            title: 'Yeahhh!',
+                            text: 'Chúng mình cảm ơn tình cảm của bạn. Chúc bạn 8386, vạn sự như ý, tỷ sự như mơ, triệu triệu bất ngờ. Bạn mãi đỉnh mãi đỉnh luôn ^^',
+                            imageUrl: './thiep/anh/icon-meme.webp',
+                            imageWidth: 300,
+                            imageHeight: 200,
+                            confirmButtonText: 'Không có chiiii nè',
+                            background: '#f8f8f8',
+                            padding: '20px',
+                            customClass: {
+                                popup: 'custom-popup',
+                                title: 'custom-title',
+                                confirmButton: 'custom-confirm-button'
+                            },
+                            didOpen: () => {
+                                document.querySelector('.swal2-popup').style.borderRadius = '10px'; // Bo tròn các góc
+                            }
+                        });
                     } else {
                         // Nếu gặp lỗi khi gửi dữ liệu
                         console.error('Error!', response);
-                        alert('OPPS! Đã xảy ra lỗi');
+
+                        document.getElementById('loading-container').style.display = 'none';
+
+                        Swal.fire({
+                            title: 'Oops!',
+                            text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                            icon: 'error',
+                            confirmButtonText: 'OK'
+                        });
                     }
                 })
                 .catch(error => {
                     // Xử lý lỗi nếu có
                     console.error('Error!', error.message);
-                    alert('OPPS! Đã xảy ra lỗi: ' + error.message);
+
+                    document.getElementById('loading-container').style.display = 'none';
+
+                    Swal.fire({
+                        title: 'Oops!',
+                        text: 'Lỗi mất rồi thử lại giúp chúng mình nhé',
+                        icon: 'error',
+                        confirmButtonText: 'OK'
+                    });
                 });
         });
     </script>
