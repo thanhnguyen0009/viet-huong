@@ -491,6 +491,17 @@ hr {
 .link-map {
 	text-decoration: none;
 	color: #fff;
+	font-family: var(--font-gotham);
+	width: 200px;
+	height: 30px;
+	background-color: var(--primary-color);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 20px;
+	border: none;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 
 
@@ -1339,7 +1350,7 @@ textarea {
 }
 
 .custom-popup {
-	font-family: 'SVN-gotham';
+	font-family: 'SVN-Gotham';
 }
 
 .custom-title {
